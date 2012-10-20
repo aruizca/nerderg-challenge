@@ -1,0 +1,37 @@
+* {margin:0;padding:0;}
+
+html, body {height: 100%;}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -180px !important;
+}
+
+#main {
+    padding-top: 20px;
+    overflow: auto;
+    padding-bottom: 180px;
+}
+
+#footer {
+    text-align: right;
+    height: 120px;
+    background-color: #ABBF78;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Opera Fix*/
+body:before { //thanks to Maleika (Kohoutec)
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px; //thank you Erik J - negate effect of float
+}
+
+img.photo {
+    width: 300px;
+}
